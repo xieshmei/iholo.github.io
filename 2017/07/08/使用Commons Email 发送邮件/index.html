@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="java," />
 
 
 
@@ -89,22 +89,16 @@
 
 
 
-<meta name="description" content="使用Commons Email 发送邮件标签（空格分隔）： Email
-
-##1.介绍Apache Commons Eamil组件在Java mail的基础上进行了封装，简化了邮件的发送,它提供了几个类用于不同email类型的发送.| 类       | 作用  || ——–   | —–:  || | 用于简单邮件的发送 | 12345678| ```MultiPartEmail ```">
+<meta name="description" content="介绍Apache Commons Eamil组件在Java mail的基础上进行了封装，简化了邮件的发送,它提供了几个类用于不同email类型的发送.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Xie sh's blog">
+<meta property="og:title" content="Commons Email组件的使用">
 <meta property="og:url" content="http://iholo.me/2017/07/08/使用Commons Email 发送邮件/index.html">
 <meta property="og:site_name" content="Xie sh's blog">
-<meta property="og:description" content="使用Commons Email 发送邮件标签（空格分隔）： Email
-
-##1.介绍Apache Commons Eamil组件在Java mail的基础上进行了封装，简化了邮件的发送,它提供了几个类用于不同email类型的发送.| 类       | 作用  || ——–   | —–:  || | 用于简单邮件的发送 | 12345678| ```MultiPartEmail ```">
-<meta property="og:updated_time" content="2017-07-08T12:16:28.264Z">
+<meta property="og:description" content="介绍Apache Commons Eamil组件在Java mail的基础上进行了封装，简化了邮件的发送,它提供了几个类用于不同email类型的发送.">
+<meta property="og:updated_time" content="2017-07-08T12:50:55.627Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xie sh's blog">
-<meta name="twitter:description" content="使用Commons Email 发送邮件标签（空格分隔）： Email
-
-##1.介绍Apache Commons Eamil组件在Java mail的基础上进行了封装，简化了邮件的发送,它提供了几个类用于不同email类型的发送.| 类       | 作用  || ——–   | —–:  || | 用于简单邮件的发送 | 12345678| ```MultiPartEmail ```">
+<meta name="twitter:title" content="Commons Email组件的使用">
+<meta name="twitter:description" content="介绍Apache Commons Eamil组件在Java mail的基础上进行了封装，简化了邮件的发送,它提供了几个类用于不同email类型的发送.">
 
 
 
@@ -138,7 +132,7 @@
 
 
 
-  <title>  | Xie sh's blog </title>
+  <title> Commons Email组件的使用 | Xie sh's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -298,7 +292,7 @@
             
             
               
-                
+                Commons Email组件的使用
               
             
           </h1>
@@ -313,7 +307,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-08T20:16:16+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-08T20:43:22+08:00">
                 2017-07-08
               </time>
             
@@ -323,6 +317,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -341,7 +357,7 @@
 
           
           
-             <span id="/2017/07/08/使用Commons Email 发送邮件/" class="leancloud_visitors" data-flag-title="">
+             <span id="/2017/07/08/使用Commons Email 发送邮件/" class="leancloud_visitors" data-flag-title="Commons Email组件的使用">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -370,20 +386,47 @@
       
 
       
-        <h1 id="使用Commons-Email-发送邮件"><a href="#使用Commons-Email-发送邮件" class="headerlink" title="使用Commons Email 发送邮件"></a>使用Commons Email 发送邮件</h1><p>标签（空格分隔）： Email</p>
-<hr>
-<p>##1.介绍<br>Apache Commons Eamil组件在Java mail的基础上进行了封装，简化了邮件的发送,它提供了几个类用于不同email类型的发送.<br>| 类       | 作用  |<br>| ——–   | —–:  |<br>| <figure class="highlight plain"><figcaption><span>| 用于简单邮件的发送 | </span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">| ```MultiPartEmail ```       |   包含附件类型的邮件   | </div><div class="line">| ```HtmlEmail```        |    HTML格式的文本邮件 |  </div><div class="line">|```ImageHtmlEmail```| 用于发送包含HTML模板的邮件|</div><div class="line">|```EmailAttachment```| 定义邮件附件  |</div><div class="line">##2.下载</div><div class="line">###2.1 官网下载</div><div class="line">官网下载：[Apache Commons Email 1.4](https://commons.apache.org/proper/commons-email/download_email.cgi)</div><div class="line">###2.2 Maven</div></pre></td></tr></table></figure></p>
-<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
-<pre><code>&lt;dependency&gt;
-    &lt;groupId&gt;org.apache.commons&lt;/groupId&gt;
-    &lt;artifactId&gt;commons-email&lt;/artifactId&gt;
-    &lt;version&gt;1.4&lt;/version&gt;
-&lt;/dependency&gt;
-</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt; NOTE: Commons Email 依赖  `javax.mail`，`javax.activation `</div><div class="line"></div><div class="line">##3. 示例</div><div class="line">###3.1 SimpleEmail</div></pre></td></tr></table></figure>
-<p>Email email = new SimpleEmail();<br>email.setHostName(“smtp.qq.com”);<br>email.setSmtpPort(465);<br>email.setAuthentication(“userName”, “passWord”);<br>email.setSSLOnConnect(true);<br>email.setFrom(“user@qq.com”);<br>email.setSubject(“邮件主题”);<br>email.setMsg(“邮件内容”);<br>email.addTo(“foo@bar.com”);<br>email.send();<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">###3.2 MultiPartEmail</div><div class="line">`MultiPartEmail`用于发送包含附件的邮件，其中附件使用`EmailAttachment`构建</div></pre></td></tr></table></figure></p>
-<p>EmailAttachment attachment = new EmailAttachment();<br>attachment.setPath(“D:\Users\1.txt”);<br>attachment.setName(“照片”);<br>attachment.setDescription(“附件描述”);</p>
-<p>MultiPartEmail email = new MultiPartEmail();<br>email.setHostName(HOST_NAME);<br>email.setSmtpPort(SMTP_PORT);<br>email.setAuthentication(USER_NAME, PASS_WORD);<br>email.setFrom(“user@qq.com”);<br>email.addTo(“touser@gmail.com”);<br>email.setSubject(“附件邮件测试”);<br>email.setMsg(“正文测试”);<br>email.attach(attachment);<br>String str=email.send();<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">###3.3 HtmlEmail</div><div class="line">`HtmlEmail`</div><div class="line"></div><div class="line">```Java</div><div class="line">  HtmlEmail email = new HtmlEmail();</div><div class="line">  email.setHostName(&quot;mail.myserver.com&quot;);</div><div class="line">  email.addTo(&quot;jdoe@somewhere.org&quot;, &quot;John Doe&quot;);</div><div class="line">  email.setFrom(&quot;me@apache.org&quot;, &quot;Me&quot;);</div><div class="line">  email.setSubject(&quot;Test email with inline image&quot;);</div><div class="line">  </div><div class="line">  // embed the image and get the content id</div><div class="line">  URL url = new URL(&quot;http://www.apache.org/images/asf_logo_wide.gif&quot;);</div><div class="line">  String cid = email.embed(url, &quot;Apache logo&quot;);</div><div class="line">  </div><div class="line">  // set the html message</div><div class="line">  email.setHtmlMsg(&quot;&lt;html&gt;The apache logo - &lt;img src=\&quot;cid:&quot;+cid+&quot;\&quot;&gt;&lt;/html&gt;&quot;);</div><div class="line"></div><div class="line">  // set the alternative message</div><div class="line">  email.setTextMsg(&quot;Your email client does not support HTML messages&quot;);</div><div class="line"></div><div class="line">  // send the email</div><div class="line">  email.send();</div></pre></td></tr></table></figure></p>
-<p>###3.4 ImageHtmlEmail<br><code>ImageHtmlEmail</code>用于发送固定HTML模板的邮件<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// load your HTML email template</span></div><div class="line">  String htmlEmailTemplate = <span class="string">".... &lt;img src=\"http://www.apache.org/images/feather.gif\"&gt; ...."</span>;</div><div class="line"></div><div class="line">  <span class="comment">// define you base URL to resolve relative resource locations</span></div><div class="line">  URL url = <span class="keyword">new</span> URL(<span class="string">"http://www.apache.org"</span>);</div><div class="line"></div><div class="line">  <span class="comment">// create the email message</span></div><div class="line">  ImageHtmlEmail email = <span class="keyword">new</span> ImageHtmlEmail();</div><div class="line">  email.setDataSourceResolver(<span class="keyword">new</span> DataSourceUrlResolver(url));</div><div class="line">  email.setHostName(<span class="string">"mail.myserver.com"</span>);</div><div class="line">  email.addTo(<span class="string">"jdoe@somewhere.org"</span>, <span class="string">"John Doe"</span>);</div><div class="line">  email.setFrom(<span class="string">"me@apache.org"</span>, <span class="string">"Me"</span>);</div><div class="line">  email.setSubject(<span class="string">"Test email with inline image"</span>);</div><div class="line">  </div><div class="line">  <span class="comment">// set the html message</span></div><div class="line">  email.setHtmlMsg(htmlEmailTemplate);</div><div class="line"></div><div class="line">  <span class="comment">// set the alternative message</span></div><div class="line">  email.setTextMsg(<span class="string">"Your email client does not support HTML messages"</span>);</div><div class="line"></div><div class="line">  <span class="comment">// send the email</span></div><div class="line">  email.send();</div></pre></td></tr></table></figure></p>
+        <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>Apache Commons Eamil组件在Java mail的基础上进行了封装，简化了邮件的发送,它提供了几个类用于不同email类型的发送.<br><a id="more"></a></p>
+<table>
+<thead>
+<tr>
+<th>类</th>
+<th style="text-align:right">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SimpleEmail</td>
+<td style="text-align:right">用于简单邮件的发送</td>
+</tr>
+<tr>
+<td>MultiPartEmail</td>
+<td style="text-align:right">包含附件类型的邮件</td>
+</tr>
+<tr>
+<td>HtmlEmail</td>
+<td style="text-align:right">HTML格式的文本邮件</td>
+</tr>
+<tr>
+<td>ImageHtmlEmail</td>
+<td style="text-align:right">用于发送包含HTML模板的邮件</td>
+</tr>
+<tr>
+<td>EmailAttachment</td>
+<td style="text-align:right">定义邮件附件</td>
+</tr>
+</tbody>
+</table>
+<h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><h2 id="官网下载"><a href="#官网下载" class="headerlink" title="官网下载"></a>官网下载</h2><p>官网下载：<a href="https://commons.apache.org/proper/commons-email/download_email.cgi" target="_blank" rel="external">Apache Commons Email 1.4</a></p>
+<h2 id="Maven"><a href="#Maven" class="headerlink" title="Maven"></a>Maven</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email --&gt;</div><div class="line">		&lt;dependency&gt;</div><div class="line">			&lt;groupId&gt;org.apache.commons&lt;/groupId&gt;</div><div class="line">			&lt;artifactId&gt;commons-email&lt;/artifactId&gt;</div><div class="line">			&lt;version&gt;1.4&lt;/version&gt;</div><div class="line">		&lt;/dependency&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>NOTE: Commons Email 依赖  <code>javax.mail</code>，<code>javax.activation</code></p>
+</blockquote>
+<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><h2 id="SimpleEmail"><a href="#SimpleEmail" class="headerlink" title="SimpleEmail"></a>SimpleEmail</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">Email email = new SimpleEmail();</div><div class="line">email.setHostName(&quot;smtp.qq.com&quot;);</div><div class="line">email.setSmtpPort(465);</div><div class="line">email.setAuthentication(&quot;userName&quot;, &quot;passWord&quot;);</div><div class="line">email.setSSLOnConnect(true);</div><div class="line">email.setFrom(&quot;user@qq.com&quot;);</div><div class="line">email.setSubject(&quot;邮件主题&quot;);</div><div class="line">email.setMsg(&quot;邮件内容&quot;);</div><div class="line">email.addTo(&quot;foo@bar.com&quot;);</div><div class="line">email.send();</div></pre></td></tr></table></figure>
+<h2 id="MultiPartEmail"><a href="#MultiPartEmail" class="headerlink" title="MultiPartEmail"></a>MultiPartEmail</h2><p><code>MultiPartEmail</code>用于发送包含附件的邮件，其中附件使用<code>EmailAttachment</code>构建<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">EmailAttachment attachment = new EmailAttachment();</div><div class="line">attachment.setPath(&quot;D:\\Users\\1.txt&quot;);</div><div class="line">attachment.setName(&quot;照片&quot;);</div><div class="line">attachment.setDescription(&quot;附件描述&quot;);</div><div class="line"></div><div class="line">MultiPartEmail email = new MultiPartEmail();</div><div class="line">email.setHostName(HOST_NAME);</div><div class="line">email.setSmtpPort(SMTP_PORT);</div><div class="line">email.setAuthentication(USER_NAME, PASS_WORD);</div><div class="line">email.setFrom(&quot;user@qq.com&quot;);</div><div class="line">email.addTo(&quot;touser@gmail.com&quot;);</div><div class="line">email.setSubject(&quot;附件邮件测试&quot;);</div><div class="line">email.setMsg(&quot;正文测试&quot;);</div><div class="line">email.attach(attachment);</div><div class="line">String str=email.send();</div></pre></td></tr></table></figure></p>
+<h2 id="HtmlEmail"><a href="#HtmlEmail" class="headerlink" title="HtmlEmail"></a>HtmlEmail</h2><p><code>HtmlEmail</code></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">HtmlEmail email = <span class="keyword">new</span> HtmlEmail();</div><div class="line">email.setHostName(<span class="string">"mail.myserver.com"</span>);</div><div class="line">email.addTo(<span class="string">"jdoe@somewhere.org"</span>, <span class="string">"John Doe"</span>);</div><div class="line">email.setFrom(<span class="string">"me@apache.org"</span>, <span class="string">"Me"</span>);</div><div class="line">email.setSubject(<span class="string">"Test email with inline image"</span>);</div><div class="line"></div><div class="line"><span class="comment">// embed the image and get the content id</span></div><div class="line">URL url = <span class="keyword">new</span> URL(<span class="string">"http://www.apache.org/images/asf_logo_wide.gif"</span>);</div><div class="line">String cid = email.embed(url, <span class="string">"Apache logo"</span>);</div><div class="line"></div><div class="line"><span class="comment">// set the html message</span></div><div class="line">email.setHtmlMsg(<span class="string">"&lt;html&gt;The apache logo - &lt;img src=\"cid:"</span>+cid+<span class="string">"\"&gt;&lt;/html&gt;"</span>);</div><div class="line"></div><div class="line"><span class="comment">// set the alternative message</span></div><div class="line">email.setTextMsg(<span class="string">"Your email client does not support HTML messages"</span>);</div><div class="line"></div><div class="line"><span class="comment">// send the email</span></div><div class="line">email.send();</div></pre></td></tr></table></figure>
+<h2 id="ImageHtmlEmail"><a href="#ImageHtmlEmail" class="headerlink" title="ImageHtmlEmail"></a>ImageHtmlEmail</h2><p><code>ImageHtmlEmail</code>用于发送固定HTML模板的邮件<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// load your HTML email template</span></div><div class="line">  String htmlEmailTemplate = <span class="string">".... &lt;img src=\"http://www.apache.org/images/feather.gif\"&gt; ...."</span>;</div><div class="line"></div><div class="line">  <span class="comment">// define you base URL to resolve relative resource locations</span></div><div class="line">  URL url = <span class="keyword">new</span> URL(<span class="string">"http://www.apache.org"</span>);</div><div class="line"></div><div class="line">  <span class="comment">// create the email message</span></div><div class="line">  ImageHtmlEmail email = <span class="keyword">new</span> ImageHtmlEmail();</div><div class="line">  email.setDataSourceResolver(<span class="keyword">new</span> DataSourceUrlResolver(url));</div><div class="line">  email.setHostName(<span class="string">"mail.myserver.com"</span>);</div><div class="line">  email.addTo(<span class="string">"jdoe@somewhere.org"</span>, <span class="string">"John Doe"</span>);</div><div class="line">  email.setFrom(<span class="string">"me@apache.org"</span>, <span class="string">"Me"</span>);</div><div class="line">  email.setSubject(<span class="string">"Test email with inline image"</span>);</div><div class="line">  </div><div class="line">  <span class="comment">// set the html message</span></div><div class="line">  email.setHtmlMsg(htmlEmailTemplate);</div><div class="line"></div><div class="line">  <span class="comment">// set the alternative message</span></div><div class="line">  email.setTextMsg(<span class="string">"Your email client does not support HTML messages"</span>);</div><div class="line"></div><div class="line">  <span class="comment">// send the email</span></div><div class="line">  email.send();</div></pre></td></tr></table></figure></p>
 <hr>
 <p>参考:<a href="https://commons.apache.org/proper/commons-email/index.html" target="_blank" rel="external">Commail Email官网</a></p>
 
@@ -407,6 +450,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+        </div>
+      
 
       
         
@@ -416,8 +465,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/16/快速排序算法/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
+              <a href="/2017/03/16/快速排序算法/" rel="next" title="快速排序">
+                <i class="fa fa-chevron-left"></i> 快速排序
               </a>
             
           </div>
@@ -451,7 +500,7 @@
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2017/07/08/使用Commons Email 发送邮件/"
-           data-title="" data-url="http://iholo.me/2017/07/08/使用Commons Email 发送邮件/">
+           data-title="Commons Email组件的使用" data-url="http://iholo.me/2017/07/08/使用Commons Email 发送邮件/">
       </div>
     
   </div>
@@ -511,7 +560,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -522,7 +571,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -615,7 +664,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#使用Commons-Email-发送邮件"><span class="nav-number">1.</span> <span class="nav-text">使用Commons Email 发送邮件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#下载"><span class="nav-number">2.</span> <span class="nav-text">下载</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#官网下载"><span class="nav-number">2.1.</span> <span class="nav-text">官网下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Maven"><span class="nav-number">2.2.</span> <span class="nav-text">Maven</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#示例"><span class="nav-number">3.</span> <span class="nav-text">示例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#SimpleEmail"><span class="nav-number">3.1.</span> <span class="nav-text">SimpleEmail</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MultiPartEmail"><span class="nav-number">3.2.</span> <span class="nav-text">MultiPartEmail</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HtmlEmail"><span class="nav-number">3.3.</span> <span class="nav-text">HtmlEmail</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ImageHtmlEmail"><span class="nav-number">3.4.</span> <span class="nav-text">ImageHtmlEmail</span></a></li></ol></li></ol></div>
             
 
           </div>
